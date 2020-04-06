@@ -74,9 +74,14 @@ body{
 ::placeholder{
     color: white;
 }
+.categories__title{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    padding-left: 30px;
+}
 
 .carousel{
-    width: 100%;
     overflow: auto;
     padding: 30px;
     position: relative;
@@ -138,4 +143,29 @@ body{
 .carousel__item--details:hover{
     opacity: 1;
     color: white;
+}
+
+.footer{
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #8f57fd;
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+.footer a{
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px){
+    .footer{
+        flex-direction: column;
+    }
 }
